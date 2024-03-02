@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik:wght@800&display=swap&family=Libre+Baskerville&family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import './styles/variables.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -284,6 +287,7 @@
 .nav {
   position: relative;
 }
+
 @media (max-width: 768px) {
   .address_area {
     font-size: 0.55rem !important;

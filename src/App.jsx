@@ -4,15 +4,16 @@ import Home from "./Home";
 import Final from "./Final";
 import RegisterPage from "./components/Register";
 import Navbar from "./Navbar";
+import { Signup } from "./pages/signup/Signup";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<RegisterPage />} />
         <Route path="/createresume" element={<Home />} />
         <Route path="/final" element={<Final />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
