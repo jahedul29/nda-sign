@@ -13,8 +13,10 @@ import {
 } from "firebase/firestore";
 import { toast } from "react-toastify";
 import FormCheckbox from "../../components/form/formCheckbox/FormCheckbox";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+  const navigate = useNavigate();
   const [isFormSubmitting, setIsformSubmitting] = useState(false);
 
   const handleLogin = async (data) => {
@@ -36,6 +38,7 @@ export const Login = () => {
         toast.error("Email or password not valid");
       } else {
         toast.success("Email and password mathced");
+        navigate("/createresume");
       }
       setIsformSubmitting(false);
     } catch (e) {
