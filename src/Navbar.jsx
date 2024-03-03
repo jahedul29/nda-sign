@@ -6,6 +6,7 @@ const pagesWithoutNavbar = ["/signup"]
 
 const Navbar = () => {
   const location = useLocation();
+
   return (
     !pagesWithoutNavbar.includes(location.pathname) ? (
       <div className="py-3 nav">

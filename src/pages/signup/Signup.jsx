@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const Signup = () => {
   return (
-    <div className='auth-container sign-up'>
+    <div className='auth-container'>
       <div className="content">
         <h1>Sign the documents</h1>
         <div className='inner-content'>

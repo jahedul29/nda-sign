@@ -9,6 +9,7 @@ import { Signup } from "./pages/signup/Signup";
 const App = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<RegisterPage />} />
         <Route path="/createresume" element={<Home />} />
