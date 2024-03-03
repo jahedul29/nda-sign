@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./assets/nda.jpeg";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-const pagesWithoutNavbar = ["/signup"]
+import { pagesWithoutNavbar } from "./utils/utils";
 
 const Navbar = () => {
   const location = useLocation();

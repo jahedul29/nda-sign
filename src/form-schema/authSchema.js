@@ -22,3 +22,17 @@ export const signupFormSchema = yup.object({
     .required("Confirm password is required")
     .oneOf([yup.ref("password"), null], "Password must match"),
 });
+
+export const loginFormSchema = yup.object({
+  email: yup
+    .string()
+    .required("Email is required")
+    .matches(emailRegexPattern, "Please enter a valid email address"),
+  password: yup
+    .string()
+    .required("Password is required")
+    .matches(
+      strongPasswordRegexPattern,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+    )
+});
