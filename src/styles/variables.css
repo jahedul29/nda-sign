@@ -1,0 +1,19 @@
+:root {
+    /* colors */
+    --primary-bg-color: #ffffff;
+    --dark-text-color: #000000;
+    --light-text-color: #222222;
+    --lightes-text-color: #777777;
+    --danger-text-color: #FF0000;
+    --colored-text: #3D806F;
+    --primary-button-bg: #222222;
+    --primary-border-color: #E7E7E7;
+}
+/* breakpoints */
+/* --breakpoint-xxs: 380px;
+--breakpoint-xs: 420px;
+--breakpoint-sm: 640px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 1024px;
+--breakpoint-xl: 1280px;
+--breakpoint-md2xl: 1536px; */

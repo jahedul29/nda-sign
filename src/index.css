@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik:wght@800&display=swap&family=Libre+Baskerville&family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import './styles/variables.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -284,6 +287,40 @@
 .nav {
   position: relative;
 }
+
+.form-link {
+  color: var(--colored-text);
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 500;
+}
+.loader {
+  border: 3px solid #f3f3f3; /* Light gray border */
+  border-top: 3px solid black; /* Black top border */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite; /* Rotate animation */
+}
+.input-err-msg {
+  color: var(--danger-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (max-width: 768px) {
   .address_area {
     font-size: 0.55rem !important;

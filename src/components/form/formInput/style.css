@@ -1,0 +1,49 @@
+.form-input {
+  width: 100%;
+}
+
+.form-input label {
+  color: var(--dark-text-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.form-input input {
+  padding: 13px 16px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 24px;
+  box-sizing: border-box;
+  color: var(--dark-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.form-input input:focus,
+.form-input input:active {
+  border: 1px solid var(--dark-text-color) !important;
+}
+
+.form-input .input-err-msg {
+  color: var(--danger-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.form-input .error,
+.form-input .error:focus,
+.form-input .error:active {
+  border: 1px solid var(--danger-text-color) !important;
+}
