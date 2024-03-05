@@ -27,11 +27,15 @@
 /* .auth-button:disabled {
   background-color: rgba(34, 34, 34, 0.8);
 } */
-.auth-container  > div {
+/* .auth-container  > div {
+  width: 100%;
+} */
+.auth-container .content{
   width: 100%;
 }
 .auth-container  .image {
   display: none;
+  width: auto;
 }
 .auth-container  .image img {
   /* width: 100%; */
@@ -99,7 +103,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  .auth-container  > div {
+  /* .auth-container  > div {
     width: 50%;
-  }
+  } */
 }
