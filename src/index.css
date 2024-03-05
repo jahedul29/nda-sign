@@ -305,13 +305,14 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-.loader {
+.button-loader {
   border: 3px solid #f3f3f3; /* Light gray border */
   border-top: 3px solid black; /* Black top border */
   border-radius: 50%;
   width: 20px;
   height: 20px;
   animation: spin 1s linear infinite; /* Rotate animation */
+  margin-right: 10px;
 }
 .input-err-msg {
   color: var(--danger-text-color);

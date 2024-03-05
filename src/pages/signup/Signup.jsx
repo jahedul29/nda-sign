@@ -92,7 +92,7 @@ export const Signup = () => {
                 type="submit"
                 className="auth-button"
               >
-                {isFormSubmitting && <div className="loader"></div>}
+                {isFormSubmitting && <div className="button-loader"></div>}
                 {isFormSubmitting ? "Loading..." : "Sign up"}
               </button>
             </div>

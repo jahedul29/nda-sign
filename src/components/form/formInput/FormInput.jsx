@@ -9,7 +9,7 @@ const FormInput = ({
   type,
   value = "",
   placeholder,
-  onChange,
+  // onChange,
 }) => {
   const {
     control,
@@ -31,7 +31,7 @@ const FormInput = ({
             className={`form-control ${errorMessage ? 'error' : ''}`}
             placeholder={placeholder}
             // onChange={onChange}
-            // value={value ? value : field.value}
+            value={field?.value || value}
           />
         )}
       />

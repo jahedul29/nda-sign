@@ -37,12 +37,12 @@ export const Login = () => {
       if (querySnapshot.empty) {
         toast.error("Email or password not valid");
       } else {
-        toast.success("Email and password mathced");
+        toast.success("Logged in successfully");
+        localStorage.setItem("userID", querySnapshot.docs[0].id)
         navigate("/createresume");
       }
       setIsformSubmitting(false);
     } catch (e) {
-      console.log({ e });
       setIsformSubmitting(false);
     }
   };
@@ -63,7 +63,7 @@ export const Login = () => {
                 label={"Email"}
                 placeholder={"Enter email"}
                 type={"text"}
-                onChange={(e) => console.log(e.target.value)}
+                // onChange={(e) => console.log(e.target.value)}
               />
             </div>
             <div className="input-container">
@@ -72,7 +72,7 @@ export const Login = () => {
                 label={"Password"}
                 placeholder={"Password"}
                 type={"password"}
-                onChange={(e) => console.log(e.target.value)}
+                // onChange={(e) => console.log(e.target.value)}
               />
             </div>
             <div className="agree-terms">
@@ -83,7 +83,7 @@ export const Login = () => {
             </div>
             <div className="input-container">
               <button type="submit" className="auth-button">
-                {isFormSubmitting && <div className="loader"></div>}
+                {isFormSubmitting && <div className="button-loader"></div>}
                 {isFormSubmitting ? "Loading..." : "Login"}
               </button>
             </div>
