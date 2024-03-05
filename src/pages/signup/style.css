@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 97vh;
-  max-width: 1440px;
+  height: 100%;
+  /* max-width: 1440px; */
   margin: auto;
 }
 .auth-button {
@@ -34,7 +34,7 @@
   display: none;
 }
 .auth-container  .image img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   object-fit: contain;
 }
@@ -94,11 +94,11 @@
   column-gap: 8px;
   align-items: center;
 }
-@media (min-width: 780px) {
+@media (min-width: 1024px) {
   .auth-container .image {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
-
   .auth-container  > div {
     width: 50%;
   }

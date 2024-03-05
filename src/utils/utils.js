@@ -1,1 +1,1 @@
-export const pagesWithoutNavbar = ["/signup", "/login"]
+export const pagesWithoutNavbar = ["/", "/signup", "/login"]

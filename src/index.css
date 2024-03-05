@@ -7,6 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+#root {
+  height: 100%;
+}
 .adb {
   font-family: "Rubik", sans-serif;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Final from "./Final";
 import RegisterPage from "./components/Register";
@@ -12,7 +12,8 @@ const App = () => {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<RegisterPage />} />
+        {/* <Route path="/" element={<RegisterPage />} /> */}
+        <Route path="/" element={<Navigate to="/signup" replace  />} />
         <Route path="/createresume" element={<Home />} />
         <Route path="/final" element={<Final />} />
         <Route path="/signup" element={<Signup />} />
