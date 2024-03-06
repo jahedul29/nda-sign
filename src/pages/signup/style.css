@@ -37,9 +37,8 @@
   width: auto;
 }
 .auth-container  .image img {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 .auth-container  .content h1 {
   color: var(--dark-text-color);
@@ -100,8 +99,12 @@
 }
 @media (min-width: 1025px) {
   .auth-container .image {
+    width: 50%;
     display: flex;
     justify-content: flex-end;
+  }
+  .auth-container .content {
+    width: 50%;
   }
   .auth-container  .content h1 {
     margin-bottom: 10px;
